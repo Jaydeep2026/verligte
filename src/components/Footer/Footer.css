@@ -1,0 +1,85 @@
+.ftr {
+  padding: 64px var(--pad) 0;
+  border-top: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.ftr__main {
+  display: grid;
+  grid-template-columns: 1.6fr repeat(3, 1fr);
+  gap: 32px;
+}
+
+.ftr__brand {
+  display: grid;
+  gap: 20px;
+  align-content: start;
+  max-width: 340px;
+}
+
+.ftr__brand p {
+  color: var(--muted);
+}
+
+.ftr__btn {
+  width: fit-content;
+  background: var(--accent);
+  color: var(--accent-ink);
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: transform 0.3s var(--ease);
+}
+
+.ftr__btn:hover {
+  transform: translateY(-3px);
+}
+
+.ftr__col {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+
+.ftr__col h4 {
+  margin-bottom: 6px;
+}
+
+.ftr__col a:hover {
+  color: var(--accent);
+}
+
+.ftr__bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 56px;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+
+.ftr__bar a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 800px) {
+  .ftr__main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ftr__brand {
+    grid-column: 1/-1;
+  }
+}
+
+.ftr__logo {
+  width: 220px;
+}
+
+.ftr__mark {
+  width: 100%;
+  aspect-ratio: 1064/195;
+  margin-top: 48px;
+  overflow: hidden;
+}

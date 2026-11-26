@@ -1,0 +1,49 @@
+.con {
+  padding: clamp(60px, 8vw, 120px) var(--pad) 0;
+}
+
+.con__banner {
+  height: 42vh;
+  background: radial-gradient(70% 120% at 80% 100%, #e06b2d, #2a1006 60%, #0e0e0e);
+  border-radius: 4px;
+}
+
+.con__grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: end;
+  padding: 56px 0;
+}
+
+.con__info {
+  display: grid;
+  gap: 10px;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.con__info a:hover {
+  color: var(--accent);
+}
+
+.con__cta {
+  font-size: clamp(56px, 12vw, 200px);
+  transition: letter-spacing 0.6s var(--ease);
+}
+
+.con__cta span {
+  color: var(--accent);
+  display: inline-block;
+  transition: transform 0.5s var(--ease);
+}
+
+.con__cta:hover span {
+  transform: translate(8px, -8px);
+}
+
+@media (max-width: 800px) {
+  .con__grid {
+    grid-template-columns: 1fr;
+  }
+}

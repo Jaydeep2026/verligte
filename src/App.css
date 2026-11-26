@@ -1,0 +1,8 @@
+.site {
+  opacity: 0;
+}
+
+.site.is-ready {
+  opacity: 1;
+  transition: opacity 0.9s cubic-bezier(0.4, 0, 0.2, 1);
+}
