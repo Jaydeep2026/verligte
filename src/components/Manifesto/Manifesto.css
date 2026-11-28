@@ -8,12 +8,12 @@
 .mani__box {
   background: var(--accent);
   color: var(--accent-ink);
-  width: min(220px, 40%);
-  min-height: 220px;
-  padding: clamp(24px, 4vw, 56px);
+  width: min(13.75rem, 40%);
+  min-height: 13.75rem;
+  padding: clamp(1.5rem, 4vw, 3.5rem);
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  gap: 32px;
+  gap: 2rem;
   align-items: end;
   overflow: hidden;
   transition: width 1.3s var(--ease), min-height 1.3s var(--ease);
@@ -25,7 +25,7 @@
 }
 
 .mani__title {
-  font-size: clamp(44px, 9vw, 148px);
+  font-size: clamp(2.75rem, 9vw, 9.25rem);
   white-space: nowrap;
   opacity: 0;
   transition: opacity 0.8s 0.6s;
@@ -33,9 +33,9 @@
 
 .mani__copy {
   display: grid;
-  gap: 16px;
+  gap: 1rem;
   font-weight: 500;
-  max-width: 380px;
+  max-width: 23.75rem;
   opacity: 0;
   transition: opacity 0.8s 0.9s;
 }

@@ -16,10 +16,10 @@
 
 .pl__inner {
   position: relative;
-  width: min(100%, 520px);
+  width: min(100%, 32.5rem);
   display: grid;
   justify-items: center;
-  gap: clamp(28px, 5vw, 44px);
+  gap: clamp(1.75rem, 5vw, 2.75rem);
 }
 
 .pl__logo {
@@ -27,7 +27,7 @@
 }
 
 .pl__progress {
-  width: clamp(140px, 40%, 220px);
+  width: clamp(8.75rem, 40%, 13.75rem);
   height: 2px;
   border-radius: 2px;
   background: rgba(15, 15, 15, 0.12);

@@ -1,26 +1,26 @@
 .con {
-  padding: clamp(60px, 8vw, 120px) var(--pad) 0;
+  padding: clamp(3.75rem, 8vw, 7.5rem) var(--pad) 0;
 }
 
 .con__banner {
   height: 42vh;
   background: radial-gradient(70% 120% at 80% 100%, #e06b2d, #2a1006 60%, #0e0e0e);
-  border-radius: 4px;
+  border-radius: 0.25rem;
 }
 
 .con__grid {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 32px;
+  gap: 2rem;
   align-items: end;
-  padding: 56px 0;
+  padding: 3.5rem 0;
 }
 
 .con__info {
   display: grid;
-  gap: 10px;
+  gap: 0.625rem;
   font-style: normal;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .con__info a:hover {
@@ -28,7 +28,7 @@
 }
 
 .con__cta {
-  font-size: clamp(56px, 12vw, 200px);
+  font-size: clamp(3.5rem, 12vw, 12.5rem);
   transition: letter-spacing 0.6s var(--ease);
 }
 
@@ -39,7 +39,7 @@
 }
 
 .con__cta:hover span {
-  transform: translate(8px, -8px);
+  transform: translate(0.5rem, -0.5rem);
 }
 
 @media (max-width: 800px) {

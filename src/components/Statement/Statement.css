@@ -1,74 +1,74 @@
 .stm {
-  padding: clamp(60px, 8vw, 120px) var(--pad);
+  padding: clamp(3.75rem, 8vw, 7.5rem) var(--pad);
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  gap: clamp(24px, 4vw, 64px);
+  gap: clamp(1.5rem, 4vw, 4rem);
   align-items: center;
 }
 
 .stm__claim {
-  font-size: clamp(34px, 5.4vw, 88px);
+  font-size: clamp(2.125rem, 5.4vw, 5.5rem);
 }
 
 .stm__stage {
-  min-height: min(70vh, 560px);
-  border-radius: 6px;
+  min-height: min(70vh, 35rem);
+  border-radius: 0.375rem;
   display: grid;
   place-items: center;
-  padding: clamp(20px, 4vw, 56px);
+  padding: clamp(1.25rem, 4vw, 3.5rem);
   background: radial-gradient(80% 90% at 80% 100%, #f09a63, #e06b2d 55%, #b8501f);
 }
 
 .stm__win {
   width: 100%;
-  max-width: 520px;
+  max-width: 32.5rem;
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 30px 60px -20px rgba(60, 20, 0, 0.5);
+  border-radius: 0.625rem;
+  box-shadow: 0 1.875rem 3.75rem -1.25rem rgba(60, 20, 0, 0.5);
   overflow: hidden;
   animation: float 6s ease-in-out infinite alternate;
 }
 
 @keyframes float {
   to {
-    transform: translateY(-10px);
+    transform: translateY(-0.625rem);
   }
 }
 
 .stm__bar {
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 12px 14px;
+  gap: 0.375rem;
+  padding: 0.75rem 0.875rem;
   border-bottom: 1px solid var(--line);
 }
 
 .stm__bar i {
-  width: 9px;
-  height: 9px;
+  width: 0.5625rem;
+  height: 0.5625rem;
   border-radius: 50%;
   background: #d6d6d1;
 }
 
 .stm__bar span {
-  margin-left: 10px;
+  margin-left: 0.625rem;
   flex: 1;
   background: var(--bg);
-  padding: 3px 10px;
-  border-radius: 4px;
+  padding: 0.1875rem 0.625rem;
+  border-radius: 0.25rem;
   text-transform: none;
 }
 
 .stm__page {
   display: grid;
-  gap: 12px;
-  padding: 24px;
+  gap: 0.75rem;
+  padding: 1.5rem;
 }
 
 .stm__line {
   display: block;
-  height: 12px;
-  border-radius: 4px;
+  height: 0.75rem;
+  border-radius: 0.25rem;
   background: #e6e6e2;
   width: 20%;
   animation: fill 3.2s var(--ease) infinite alternate;
@@ -81,8 +81,8 @@
 }
 
 .stm__hero {
-  height: 110px;
-  border-radius: 6px;
+  height: 6.875rem;
+  border-radius: 0.375rem;
   background: linear-gradient(110deg, #eeeeea 30%, #fff 50%, #eeeeea 70%);
   background-size: 200% 100%;
   animation: shimmer 2.4s linear infinite;
@@ -95,9 +95,9 @@
 }
 
 .stm__btn {
-  width: 110px;
-  height: 34px;
-  border-radius: 4px;
+  width: 6.875rem;
+  height: 2.125rem;
+  border-radius: 0.25rem;
   background: var(--accent);
   animation: pulse 1.8s ease-in-out infinite;
 }

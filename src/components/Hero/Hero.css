@@ -17,7 +17,7 @@
   position: absolute;
   inset: 0;
   background: radial-gradient(60% 50% at 75% 30%, rgba(224, 107, 45, 0.30), transparent 70%), radial-gradient(45% 40% at 10% 90%, rgba(224, 107, 45, 0.14), transparent 70%);
-  filter: blur(24px);
+  filter: blur(1.5rem);
   animation: drift 14s ease-in-out infinite alternate;
 }
 
@@ -51,10 +51,10 @@
   position: relative;
   z-index: 1;
   justify-self: end;
-  margin-top: 88px;
-  max-width: 460px;
+  margin-top: 5.5rem;
+  max-width: 28.75rem;
   text-align: right;
-  font-size: clamp(13px, 1.3vw, 18px);
+  font-size: clamp(0.8125rem, 1.3vw, 1.125rem);
   line-height: 1.75;
   color: #4d4d49;
 }
@@ -67,7 +67,7 @@
 }
 
 .hero__logo {
-  width: clamp(300px, 68vw, 1000px);
+  width: clamp(18.75rem, 68vw, 62.5rem);
 }
 
 .hero__badge {
@@ -81,6 +81,6 @@
 @media (max-width: 700px) {
   .hero__badge {
     position: static;
-    margin-top: 16px;
+    margin-top: 1rem;
   }
 }

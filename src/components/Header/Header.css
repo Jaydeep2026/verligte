@@ -5,9 +5,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px var(--pad);
+  padding: 1rem var(--pad);
   background: rgba(245, 245, 243, 0.85);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(0.75rem);
   border-bottom: 1px solid var(--line);
   transition: background 0.4s, border-color 0.4s;
 }
@@ -19,31 +19,31 @@
 }
 
 .hdr__burger {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   display: grid;
   align-content: center;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .hdr__burger span {
   display: block;
-  height: 2px;
+  height: 0.15rem;
   background: var(--text);
   transition: transform 0.5s var(--ease);
 }
 
 .hdr__burger[aria-expanded=true] span:first-child {
-  transform: translateY(5px) rotate(45deg);
+  transform: translateY(0.3125rem) rotate(45deg);
 }
 
 .hdr__burger[aria-expanded=true] span:last-child {
-  transform: translateY(-5px) rotate(-45deg);
+  transform: translateY(-0.3125rem) rotate(-45deg);
 }
 
 .hdr__logo {
   display: block;
-  width: clamp(120px, 13vw, 170px);
+  width: clamp(7.5rem, 13vw, 10.625rem);
   opacity: 0;
 }
 
@@ -59,7 +59,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 8px;
+  gap: 0.5rem;
   padding: var(--pad);
   clip-path: inset(0 0 100% 0);
   visibility: hidden;
@@ -73,7 +73,7 @@
 }
 
 .menu a {
-  font-size: clamp(44px, 9vw, 110px);
+  font-size: clamp(2.75rem, 9vw, 6.875rem);
   font-weight: 700;
   letter-spacing: -0.04em;
   text-transform: uppercase;

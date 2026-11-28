@@ -1,26 +1,26 @@
 .pri {
-  padding: clamp(60px, 8vw, 120px) var(--pad);
+  padding: clamp(3.75rem, 8vw, 7.5rem) var(--pad);
   display: grid;
   grid-template-columns: 1.3fr 1fr;
-  gap: clamp(32px, 5vw, 80px);
+  gap: clamp(2rem, 5vw, 5rem);
   align-items: end;
 }
 
 .pri__claim {
-  font-size: clamp(36px, 5.6vw, 92px);
+  font-size: clamp(2.25rem, 5.6vw, 5.75rem);
   max-width: 13ch;
 }
 
 .pri__list {
   display: grid;
-  gap: 28px;
+  gap: 1.75rem;
 }
 
 .pri__item {
-  padding-top: 16px;
+  padding-top: 1rem;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  max-width: 300px;
+  max-width: 18.75rem;
 }
 
 .pri__item:nth-child(2) {
@@ -37,7 +37,7 @@
 
 .pri__t {
   color: var(--accent);
-  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
 }
 
 @media (max-width: 800px) {
